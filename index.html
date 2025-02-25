@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Technical Documentation</title>
+  <link rel="stylesheet" href="./styles.css">
+</head> 
+<body>
+<nav id="navbar">
+ <img id="image" src="https://snipboard.io/G08QSv.jpg" alt="image-1" border="0" class="center"></img>
+<header>Battle Royal</header>
+<ul>
+<li><a class="nav-link" href="#Introduction">Introduction</a></li>
+<li>
+<a class="nav-link" href="#Weapons_Overview">Weapons Overview</a>
+</li>
+<li>
+<a class="nav-link" href="#Building_Materials">Building Materials</a>
+</li>
+<li>
+<a class="nav-link" href="#Consumables">Consumables</a>
+</li>
+<li>
+<a class="nav-link" href="#Building_Structure">Building Structure</a>
+</li>
+<li>
+<a class="nav-link" href="#Traps_and_Gadgets">Traps and Gadgets</a>
+</li>
+<li>
+<a class="nav-link" href="#Trap_Mechanism">Trap Mechanism</a>
+</li>
+<li>
+<a class="nav-link" href="#Mobility_Items">Mobility Items</a>
+</li>
+<li>
+<a class="nav-link" href="#Mobility_Animation">Mobility Animation</a>
+</li>
+<li>
+<a class="nav-link" href="#Inventory_Management">Inventory Management</a>
+</li>
+<li>
+<a class="nav-link" href="#Inventory_Layout">Inventory Layout</a>
+</li>
+<li>
+<a class="nav-link" href="#Crafting_and_Upgrades">Crafting and Upgrades</a>
+</li>
+<li>
+<a class="nav-link" href="#Special_Equipment">Special Equipment</a>
+</li>
+<li>
+<a class="nav-link" href="#Equipment_Tooltip">Equipment Tooltip</a>
+</li>
+</ul>
+</nav>
+
+<main id="main-doc">
+<section class="main-section" id="Introduction">
+<header>Introduction</header>
+<img id="image" src="https://snipboard.io/05UOQz.jpg" alt="image-2" border="0"></img>
+<article>
+<p>Fortnite is a popular battle royale game where players compete to be the last one standing. Mastering the use of equipment is crucial for survival. This documentation explores how different types of equipment work and how to utilize them effectively.</p>
+</section>
+</article>
+<section class="main-section" id="Weapons_Overview">
+<header>Weapons Overview</header>
+<article>
+<ul>
+<li>Assault Rifles: Versatile for both short and medium-range combat.</li>
+<li>Shotguns: High damage at close range.</li>
+<li>Sniper Rifles: Long-range, precision shooting.</li>
+<li>Pistols: Quick firing, close-range weapons.</li>
+<li>Explosives: Area damage for structures and groups.</li>
+</ul>
+</article>
+</section>
+<section class="main-section" id="Building_Materials">
+<header>Building Materials</header>
+<article>
+<p>Fortnite’s building mechanics allow players to create defensive structures. There are three types of materials:</p>
+<ul>
+<li>Wood: Fast to build but weakest in durability.</li>
+<li>Brick: Balanced build speed and durability.</li>
+<li>Metal: Slow to build but strongest in durability.</li>
+</ul> 
+</article>
+</section>
+<section class="main-section" id="Consumables">
+<header>Consumables</header>
+<article>
+<p>Consumables provide healing or shield boosts. Knowing when and how to use them is vital.</p>
+<p><strong>Types of Consumables:</strong></p>
+<ul>
+<li>Medkits: Fully restore health.</li>
+<li>Bandages: Restore partial health.</li>
+<li>Shield Potions: Increase shield capacity.</li>
+<li>Slurp Juice: Gradual health and shield regeneration.</li>
+<li>Chug Jug: Fully restores both health and shield.</li>
+</ul> 
+</article>
+</section>
+<section class="main-section" id="Building_Structure">
+<header>Building Structure</header>
+<article>
+<fieldset>
+<p></p>
+<p></p>
+<code>html</code><br>
+<code>div class "structure">/div</code><br>
+<code>div class "wall">/div</code><br>
+<code>div class"floor">/div</code><br>
+<code>div class "ramp">/div</code><br>
+<code>/div</code><br>
+</fieldset>
+<fieldset>
+<code>css</code><br>
+<code>structure {display: flex; 
+flex-direction: column;}
+</code><br>
+<code> .wall, .floor, .ramp {
+background-color: #ccc;
+margin: 5px }
+</code>
+</fieldset>
+</article>
+</section>
+<section class="main-section" id="Traps_and_Gadgets">
+<header>Traps and Gadgets</header>
+<article>
+<p>Traps and gadgets provide strategic advantages by surprising enemies or offering mobility.</p>
+<p><strong>Types of Traps:</strong></p>
+<ul>
+<li>Spike Trap: Deals damage to enemies when triggered.</li>
+<li>Bouncer: Launches players into the air.</li>
+<li>Launch Pad: Deploys a glider for quick movement.</li>
+<li>Campfire: Heals players standing nearby.</li>
+</ul>
+</article>
+</section>
+<section class="main-section" id="Trap_Mechanism">
+<header>Trap Mechanism</header>
+<article>
+<fieldset>
+<code>html</code><br>
+<code>div class "trap spike-trap"></code><br>
+<code>span class "spike">/span</code><br>
+<code>/div</code><br>
+</fieldset>
+<fieldset>
+<code>css</code><br>
+<code>.spike trap {
+position: relative;
+width: 100px;
+height: 100px;
+background-color: #444;
+</code><br>
+<code>.spike {
+position: absolute;
+width: 10px;
+height: 40px;
+background-color: #999;
+top: 10px;
+left: 45px;}
+</code>
+</fieldset>
+</article>
+</section>
+<section class="main-section" id="Mobility_Items">
+<header>Mobility Items</header>
+<article>
+<p>Mobility items help players navigate the map quickly and strategically.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Grappler: Pulls the player towards a surface.</li>
+<li>Shockwave Grenade: Launches players without fall damage.</li>
+<li>Glider Redeploy: Allows mid-air gliding.</li>
+<li>Vehicles: Cars, boats, and air mobility options.</li>
+</ul> 
+</article>
+</section>
+<section class="main-section" id="Mobility_Animation">
+<header>Mobility Animation</header>
+<article>
+<fieldset>
+<code>css 
+</code><br>
+<code>@keyframes grapple {0% {transform: translateX(0);}</code>
+<code>100% {transform: translateX(100px):}}</code><br>
+<code>.grappler {
+animation: grappler 2s infinte;}</code><br>
+</fieldset>
+</article>
+</section>
+<section class="main-section" id="Inventory_Management">
+<header>Inventory Management</header>
+<article>
+<p>Managing inventory is crucial for optimal performance in battle.</p>
+<p><strong>Inventory Tips:</strong></p>
+<ul> 
+<li>Prioritize healing items for survival.</li>
+<li>Balance short and long-range weapons.</li>
+<li>Carry mobility items for quick escapes.</li>
+<li>Organize inventory for quick access in combat.</li>
+<li>Discard low-tier items for better upgrades.</li>
+</ul> 
+</article>
+</section>
+<section class="main-section" id="Inventory_Layout">
+<header>Inventory Layout</header>
+<article>
+<fieldset>
+<code>html</code><br>
+<code>div class="inventory"></code><br>
+<code>div class="slot weapon>/div</code><br>
+<code>div class="slot healing">/div</code><br>
+<code>div class="slot mobility">/div</code><br>
+<code>/div</code><br>
+</fieldset>
+<fieldset>
+<code>css</code><br>
+<code>.inventory {
+  display: flex;
+  justify-content: space-around; }
+</code><br>
+<code>.slot {
+  width: 50px;
+  height: 50px; 
+  background-color: #eee;} 
+</code>
+</fieldset>
+</article>
+</section>
+<section class="main-section" id="Crafting_and_Upgrades">
+<header>Crafting and Upgrades</header>
+<article>
+<p>Crafting and upgrading weapons improve their effectiveness.</p>
+<p><strong>Crafting Components:</strong></p>
+<ul>
+<li>Mechanical Parts: Found by dismantling vehicles.</li>
+<li>Animal Bones: Obtained from wildlife.</li>
+<li>Nuts and Bolts: Found in tool boxes</li>
+</ul>
+</article>
+</section>
+<section class="main-section" id="Special_Equipment">
+<header>Special Equipment</header>
+<article>
+<p>Special equipment offers unique abilities and gameplay styles.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Jetpack: Temporary flight ability.</li>
+<li>Shadow Bomb: Invisibility and increased mobility.</li>
+<li>Prop-ifier: Disguise as environmental props.</li>
+<li>Mythic Weapons: Unique, powerful weapons with special abilities.</li>
+</ul>
+</article>
+</section>
+<section class="main-section" id="Equipment_Tooltip">
+<header>Equipment Tooltip</header>
+<article>
+<fieldset>
+<code>html</code><br> 
+<code>div class="equipment" data-tooltip="jetpack: temporary flight"> </code><br>
+<code>img src="jetpack.png alt="jetpack"></code><br>
+<code>/div</code><br> 
+</fieldset>
+<fieldset>
+<code>css</code><br>
+<code>.equipment: hover::after {
+content: attr(data-loop);
+position: absolute; 
+background: #333; 
+color; #fff;
+padding: 5px;
+border-raduis: 3px;}
+</code>
+</fieldset>
+</article>
+</section>
+</main>
+</body>
+</html>
